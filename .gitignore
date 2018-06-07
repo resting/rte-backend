@@ -3,7 +3,8 @@
 # Custom
 .idea
 .vscode
-public/uploads
+public/uploads/*
+!public/uploads/.keep
 
 ### VisualStudioCode template
 .vscode/*
