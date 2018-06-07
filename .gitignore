@@ -3,6 +3,7 @@
 # Custom
 .idea
 .vscode
+public/uploads
 
 ### VisualStudioCode template
 .vscode/*

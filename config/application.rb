@@ -15,5 +15,15 @@ module Backend
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Access-Control-Allow-Origin
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'localhost:3000'
+        resource '*', :headers => :any, :methods => :any
+      end
+    end
+
+    config.api_only = true
   end
 end
